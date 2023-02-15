@@ -8,7 +8,7 @@ describe('Este caso de uso permite que usuários cadastrados possam se autentica
         cy.visit('http://publicazo.insprak.com/')
     })
 
-    it('O usuário entra no sistema com sucesso', () => {
+    it.only('O usuário entra no sistema com sucesso', () => {
         //O usuário preencher os campos: E-mail e senha.
         //O usuário clica no botão 'Entrar'.
         //O sistema exibe uma mensagem de sucesso.
@@ -87,7 +87,7 @@ describe('Este caso de uso permite que usuários cadastrados possam se autentica
 
     })
 
-    it.only('O sistema exibe uma mensagem de erro quando o usuário não preenche corretamente o email e senha', () => {
+    it('O sistema exibe uma mensagem de erro quando o usuário não preenche corretamente o email e senha', () => {
         //O usuário preenche senha e email inválido.
         //O usuário clica no botão 'Entrar'.
         //O sistema exibe uma mensagem de erro.
